@@ -6,7 +6,7 @@
 </head>
 <body>
     <script>
-        function copy_clipboard(selection)
+        function select_all(selection)
         {
             var value_copy = ""
             if(selection == 0)
@@ -24,9 +24,6 @@
 
             value_copy.select();
             value_copy.setSelectionRange(0, 99999); /* For mobile devices */
-
-            /* Copy the text inside the text field */
-            navigator.clipboard.writeText(value_copy.value);
         }
     </script>
     <H1>PRT Token GENERATOR</H1>
@@ -36,7 +33,7 @@
     <p>1. Copy the Dummy URL and paste it to the Chrome browser.</p>
     <br/>
     <input type="text" readonly value="{{ dummy_uri }}" id="dummy_uri">
-    <button name="copy_clickboard" onclick="copy_clipboard(0);">Copy to Clipboard</button>
+    <button name="copy_clickboard" onclick="select_all(0);">Select All</button>
     <br />
     <p>2. When you access delete all the cookies and create a cookie with the following properties</p>
     <ul>
@@ -45,7 +42,7 @@
         <li>Value: Textbox bellow</li>
     </ul>
     <textarea id="dummy_token">{{ dummy_token }}</textarea>
-    <button name="copy_clickboard" onclick="copy_clipboard(1);">Copy to Clipboard</button>
+    <button name="copy_clickboard" onclick="select_all(1);">Select All</button>
     <form action="" method="POST">
         <p>3. While enter, the Login URL will change,put the new URL here</p>
         <input type="text" name="new_uri">
@@ -54,7 +51,7 @@
     </form>
     <p>4. Change the value of cookie x-ms-RefreshTokenCredential to this new value</p>
     <textarea id="valid_token">{{ new_token }}</textarea>
-    <button name="copy_clickboard" onclick="copy_clipboard(2);">Copy to Clipboard</button>
+    <button name="copy_clickboard" onclick="select_all(2);">Select All</button>
     <p>5. Complete the MFA and you are DONE!</p>
 
     <H2>Troubleshoots:</H2>
