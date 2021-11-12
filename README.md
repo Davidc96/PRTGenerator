@@ -39,5 +39,5 @@ Don't worry when you sign out because when you login again it will use the PRT y
 ``https://teams.microsoft.com`` and it will solve the problem.
 ## Credits
 
-<a href="https://github.com/dirkjanm">@Dirkjanm</a> for the pass-the-prt script
-My <a href="https://davidc96.github.io/2021/07/30/Ataques-Laterales-Cloud-Pass-PRT.html"> blog post </a> about the PASS-THE-PRT attack (Spanish only)
+- <a href="https://github.com/dirkjanm">@Dirkjanm</a> for the pass-the-prt script
+- My <a href="https://davidc96.github.io/2021/07/30/Ataques-Laterales-Cloud-Pass-PRT.html"> blog post </a> about the PASS-THE-PRT attack (Spanish only)
