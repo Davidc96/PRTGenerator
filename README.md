@@ -5,17 +5,21 @@ via web application to perform PASS-THE-PRT attacks
 
 ## Usage
 
-1. Install flask using command
+1. Create python3 environment in current folder 
+```python3 -m venv .\venv```
+2. Activate environment with 
+```.\venv\Scripts\activate.bat```
+3. Install flask using command
 ```pip install Flask```
-2. Set FLASK_APP environment with ```set FLASK_APP=main.py```
-3. Run the tool ```flask run --host 0.0.0.0```
-4. Go to URL ```http://127.0.0.1:5000```
-5. Follow the tool's steps
+4. Set FLASK_APP environment with ```set FLASK_APP=main.py```
+5. Run the tool ```flask run --host 0.0.0.0```
+6. Go to URL ```http://127.0.0.1:5000```
+7. Follow the tool's steps
 
-## Considerations
+## First steps
 
 To properly generate the token, you need to provide a
-dummy URL. To create a Dummy token follow the steps:
+dummy URL, you need to do this once. To create a Dummy token follow the steps:
 
 1. On the computer you want to generate the token go to
 ```https://outlook.office365.com``` on a Chrome incognito window
